@@ -133,6 +133,7 @@
         data.features = data.features.filter((row) => {
           return (row.properties.緯度 > 31.07 && row.properties.緯度 < 31.15);
         })
+	console.log(data);
 //      if(data.features.properties.緯度 > 31.07 && data.features.properties.緯度 < 31.15){
         shelter_point = L.geoJson(data,{
             pointToLayer: function (feature,cordinate) {
