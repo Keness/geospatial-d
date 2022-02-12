@@ -131,6 +131,7 @@
 	console.log(data);
         //features配列から長瀞の緯度に相当する行だけを残した配列を作ってそれをfeatures配列に上書きする。
         data.features = data.features.filter((row) => {
+	  console.log(row);
           return (row.properties.緯度 > 31.07 && row.properties.緯度 < 31.15);
         })
 	console.log(data);
